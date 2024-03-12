@@ -1,0 +1,66 @@
+@import "variables";
+@import "setup";
+.container {
+  background-color: var(--favourite);
+  height: 1000px;
+  width: 100%;
+  h1 {
+    text-align: center;
+    color: white;
+    padding-top: 2rem;
+    @media (max-width: 600px) {
+      padding: 0;
+    }
+  }
+  .center {
+    margin-top: 7rem;
+    background-color: var(--primary);
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 35px;
+    border-radius: 7px;
+    @media (max-width: 600px) {
+      margin: 0;
+    }
+
+    .form1 {
+      width: 350px;
+      @media (max-width: 600px) {
+        width: 200px;
+      }
+      label {
+        font-weight: bold;
+      }
+      .required::after {
+        content: "*";
+        font-size: 15px;
+        color: var(--favourite);
+      }
+      input[type="text"],
+      input[type="email"],
+      input[type="file"],
+      select {
+        width: 100%;
+        padding: 8px;
+        margin-top: 5px;
+        box-sizing: border-box;
+        border-radius: 10px;
+        border: 1px solid var(--favourite);
+      }
+      input[type="submit"] {
+        width: 35%;
+        background-color: var(--favourite);
+        color: var(--primary);
+        padding: 8px;
+        border-radius: 7px;
+        cursor: pointer;
+        &:hover {
+          background-color: var(--primary);
+          color: var(--favourite);
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,78 @@
+:root {
+  --background: #444;
+  --light: teal;
+  --favourite: #101720;
+  --primary: #fff;
+}
+
+.container {
+  background-color: var(--favourite);
+  height: 1000px;
+  width: 100%;
+}
+.container h1 {
+  text-align: center;
+  color: white;
+  padding-top: 2rem;
+}
+@media (max-width: 600px) {
+  .container h1 {
+    padding: 0;
+  }
+}
+.container .center {
+  margin-top: 7rem;
+  background-color: var(--primary);
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 35px;
+  border-radius: 7px;
+}
+@media (max-width: 600px) {
+  .container .center {
+    margin: 0;
+  }
+}
+.container .center .form1 {
+  width: 350px;
+}
+@media (max-width: 600px) {
+  .container .center .form1 {
+    width: 200px;
+  }
+}
+.container .center .form1 label {
+  font-weight: bold;
+}
+.container .center .form1 .required::after {
+  content: "*";
+  font-size: 15px;
+  color: var(--favourite);
+}
+.container .center .form1 input[type=text],
+.container .center .form1 input[type=email],
+.container .center .form1 input[type=file],
+.container .center .form1 select {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  box-sizing: border-box;
+  border-radius: 10px;
+  border: 1px solid var(--favourite);
+}
+.container .center .form1 input[type=submit] {
+  width: 35%;
+  background-color: var(--favourite);
+  color: var(--primary);
+  padding: 8px;
+  border-radius: 7px;
+  cursor: pointer;
+}
+.container .center .form1 input[type=submit]:hover {
+  background-color: var(--primary);
+  color: var(--favourite);
+}
+
+/*# sourceMappingURL=styles.css.map */
