@@ -11,13 +11,14 @@
       <h1>Lorem ipsum dolor sit amet.</h1>
 
       <div class="center">
-        <form action="#" class="form1">
+        <form name="inscription" action="#" class="form1" data-netlify="true">
           <div>
             <label class="required" for="first-name">First Name</label>
             <input
               type="text"
               placeholder="type your first name"
               id="first-name"
+              name="first-name"
             />
           </div>
           <br />
@@ -27,12 +28,18 @@
               type="text"
               placeholder="type your last name"
               id="last-name"
+              name="last-name"
             />
           </div>
           <br />
           <div>
             <label class="required" for="email">Email</label>
-            <input type="email" placeholder="type your email" id="email" />
+            <input
+              type="email"
+              placeholder="type your email"
+              id="email"
+              name="email"
+            />
           </div>
           <br />
 
@@ -47,7 +54,7 @@
           <br />
           <div>
             <label class="required" for="passport copy">passport copy </label>
-            <input type="file" id="passport copy" accept=".pdf" />
+            <input type="file" id="passport copy" accept=".pdf" name="file" />
           </div>
           <br />
           <div>
